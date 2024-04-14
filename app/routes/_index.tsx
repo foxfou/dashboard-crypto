@@ -3,6 +3,7 @@ import {EmailIcon} from '~/components/ui/Icons/EmailIcon/EmailIcon'
 import {Link} from '@remix-run/react'
 import {Command} from 'lucide-react'
 import {ThemeToggle} from './resources.theme-toggle'
+import {Carousel} from '~/components/ui/carousel'
 
 export default function Index() {
     return (
@@ -26,6 +27,7 @@ export default function Index() {
 
                 </Button>
 
+                <Carousel></Carousel>
                 <div className="flex gap-10">
 
                     <p>Hi 1</p>
