@@ -18,6 +18,12 @@ export default function Index() {
                 <ThemeToggle/>
             </nav>
             <div className="text-center text-2xl font-bold">Hi Ivan</div>
+            <div className="max-screen mx-auto">
+                <Button className="px-8 py-3" variant="default">
+                    <img src="email.svg" alt="" />
+                    Export to Email
+                </Button>
+            </div>
         </section>
     )
 }
