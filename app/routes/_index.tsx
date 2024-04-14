@@ -1,11 +1,8 @@
 import {Button} from '~/components/ui/button'
+import {EmailIcon} from '~/components/ui/Icons/EmailIcon/EmailIcon'
 import {Link} from '@remix-run/react'
 import {Command} from 'lucide-react'
-import {Card, CardContent} from '~/components/ui/card'
 import {ThemeToggle} from './resources.theme-toggle'
-import {Hero3DCard} from '~/components/hero-3d-card'
-import {AnimatedTooltipPreview} from '~/components/animated-preview'
-import {AnimatedPinDemo} from '~/components/animated-3d-pin'
 
 export default function Index() {
     return (
@@ -18,11 +15,24 @@ export default function Index() {
                 <ThemeToggle/>
             </nav>
             <div className="text-center text-2xl font-bold">Hi Ivan</div>
+
             <div className="max-screen mx-auto">
-                <Button className="px-8 py-3" variant="default">
-                    <img src="email.svg" alt="" />
+
+                <Button className="px-8 py-3 gap-2" variant="default">
+
+                    <EmailIcon />
+
                     Export to Email
+
                 </Button>
+
+                <div className="flex gap-10">
+
+                    <p>Hi 1</p>
+
+                    <p>Hi 2</p>
+
+                </div>
             </div>
         </section>
     )
